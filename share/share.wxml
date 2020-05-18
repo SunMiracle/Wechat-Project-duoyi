@@ -1,0 +1,16 @@
+<!--share/share.wxml-->
+<view id="share">
+  <view class="shareImage">
+    <image bindtap="toTop" id="Rollback" src="/images/toTop.png" mode="widthFix" />
+    <text class="shareConter">{{share}}</text>
+    <view id="shareConterBox">
+      <view class="shareConterTab" wx:for="{{text}}">
+      <view class="shareConterTabImage">
+        <image src="{{item.src}}"  mode="widthFix" />
+      </view>
+      <br/>
+      {{item.text}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,87 @@
+/**index.wxss**/
+.HomeListTabTitle{
+  font-size: 28px;
+  color: #282a29;
+  display: flex;
+  align-items: center;
+  
+}
+.HomeListTabTitle:before{
+  content: ' ';
+    background: red;
+    width: 5px;
+    height: 25px;
+    display: block;	
+    float: left;
+    margin-right: 10px;
+    align-items: center;
+}
+	.HomeList{
+  padding: 20px 20px;
+}
+.HomeSwitch{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.SwitchButton{
+  width: 30%;
+  height: 45px;
+  font-size:1.15em;
+  color: red;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 12px;
+}
+.switchActive{
+  background: red;
+  color:white;
+}
+#SwitchConter{
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+.SwitchConterBox{
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+  margin-top: 20px;
+}
+.SwitchConterBox image,.hmBanner{
+  width: 100%;
+  display:block;
+  margin-bottom: 12px;
+}
+.SwitchListTitle{
+  text-align: center;
+}
+.SwitchListTitle h4{
+  font-size: 1.3em;
+}
+.SwitchListTitle h6{
+  font-size: 0.9em;
+  margin-left: 10px; 
+  color:#666;
+  font-weight: 100;
+}
+.SwitchListContent{
+  text-indent: 2em;
+  margin:10px 0px;
+}
+.SwitchListButtonBox{
+  display: flex;
+  justify-content: center;
+}
+.SwitchListButton{
+  background: red;
+  color:white;
+  font-weight: bold;
+  font-size: 1.15em;
+  border-radius: 12px;
+  padding: 5px 13px;
+  margin-left: 10px;
+}
+.SwitchListButton:first{
+  margin-left: 0px;
+}

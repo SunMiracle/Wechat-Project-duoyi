@@ -1,0 +1,4 @@
+<!--foot/foot.wxml-->
+<view id="foot">
+ {{text}}
+</view>

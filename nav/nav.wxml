@@ -1,0 +1,16 @@
+<!--pages/nav/nav.wxml-->
+<view class="wrapper">
+  <view class="AppHeader">
+    	<view class="AppHeaderImage">
+        <!-- 敲重点 图片会被WebPack 转化为字符串 如果需要使用Vue来进行赋值， 需要使用require -->
+        <image src="{{headerImage}}" />
+      </view>
+      <view class="AppHeaderTab">
+        <ul class="AppHeaderTabBox">
+            <li wx:for="{{headerTab}}" >{{item.text}}</li>
+        </ul>
+      </view>
+      
+  	</view>
+</view>
+

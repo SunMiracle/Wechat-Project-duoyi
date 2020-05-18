@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-nav": "/nav/nav",
+    "my-foot": "/foot/foot",
+    "my-share": "/share/share"
+  }
+}

@@ -1,0 +1,9 @@
+/* foot/foot.wxss */
+#foot{
+  white-space: pre-wrap; 
+  background: #26292b;
+  height: 120px;
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+}

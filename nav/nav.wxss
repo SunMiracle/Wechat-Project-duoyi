@@ -1,0 +1,40 @@
+/**index.wxss**/
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,view {
+    margin:0;
+    padding:0;
+}
+.AppHeader{
+  text-align: center;
+}
+.AppHeaderImage{ 
+  padding: 8px 0px;
+  text-align: center;
+  background: black;
+}
+.AppHeaderImage image{
+  width: 273px;
+  height: 46px; 
+}
+.AppHeaderTab{
+  background: #26292b;
+  padding: 15px 8px;
+  color: white;
+}
+.AppHeaderTabBox{
+  list-style: none;
+  display: flex;
+  font-size: 1.25em;
+  justify-content: space-between;
+  font-weight: bold;
+}
+@media screen and (max-width: 350px) {
+  .AppHeaderTabBox{
+    font-size: 1.2em;
+  }
+}

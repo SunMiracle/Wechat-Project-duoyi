@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="contain">
+  <my-nav></my-nav>
+  <view class="HomeList">
+		<view class="HomeListTab">
+			<h3 class="HomeListTabTitle">{{title}}</h3>
+
+      <view class="HomeSwitch" 
+        >
+        <view 
+        class="SwitchButton {{switchShowIndex == index ? 'switchActive' : ''}}" 
+        wx:for="{{indexSwitch}}"
+        wx:for-index="index" 
+        bindtap="tabActive" data-switchindex="{{index}}">
+          {{item.title}}
+        </view>
+      </view>
+      <!-- 首页产品列表 -->
+        <view id="SwitchConter">
+          <view class="SwitchConterBox " wx:for="{{indexSwitch[switchShowIndex].content}}">
+                <image src="{{item.banner}}" mode="widthFix" /> 
+                <view class="SwitchList">
+                  <view class="SwitchListTitle">
+                    <h4>{{item.title}}</h4>
+                    <h6>{{item.subtitle}}</h6>
+                  </view>
+                  <view class="SwitchListContent">{{item.content}}</view>
+                  <view class="SwitchListButtonBox">
+                    <view class="SwitchListButton" wx:for="{{item.button}}" wx:for-item="todo">{{todo.text}}</view>
+                  </view>
+                </view>
+          </view>
+        </view>
+		</view>	
+    <!-- 首页热门活动 -->
+      <h3 class="HomeListTabTitle">{{activity}}</h3>
+      <image class="hmBanner" src="{{activityBanner}}" mode="widthFix" />
+	</view>	
+
+  <my-share></my-share>
+
+  <my-foot></my-foot>
+</view>
