@@ -34,7 +34,12 @@
 		</view>	
     <!-- 首页热门活动 -->
       <h3 class="HomeListTabTitle">{{activity}}</h3>
-      <image class="hmBanner" src="{{activityBanner}}" mode="widthFix" />
+      
+      <swiper autoplay="true" indicator-dots="true" interval="2000">
+        <swiper-item wx:for="{{activityBanner}}">
+          <image class="hmBanner" src="{{item}}" mode="widthFix" />
+        </swiper-item>
+      </swiper>
 	</view>	
 
   <my-share></my-share>

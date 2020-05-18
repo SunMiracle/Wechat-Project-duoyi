@@ -138,7 +138,12 @@ Page({
       }
     ],
     activity: "热门活动",
-    activityBanner: "/images/50fcdfd03ffb4237b12ae12a943fb93c.jpg"
+    activityBanner: [
+      "/images/50fcdfd03ffb4237b12ae12a943fb93c.jpg",
+      "/images/73b5c562831a4d53a81eb1b368f374a1.jpg",
+      "/images/c3abd54878ea46adbe877369cb0a48f1.jpg",
+      "/images/351d64e6d7524a8a87c6043803d36398.jpg"
+      ]
   },
   //事件处理函数
   tabActive:function(event) {
